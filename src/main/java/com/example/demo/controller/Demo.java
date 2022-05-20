@@ -30,7 +30,7 @@ public class Demo {
 
     @GetMapping("testxx")
     public String testxx() {
-        return "testx";
+        return "testxx";
     }
 
 }
