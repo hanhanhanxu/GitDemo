@@ -32,5 +32,4 @@ public class Demo {
     public String test3() {
         return "test3";
     }
-    
 }
