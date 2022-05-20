@@ -17,4 +17,9 @@ public class Demo {
     public String hs() {
         return "ok";
     }
+
+    @GetMapping("test1")
+    public String test1() {
+        return "test1";
+    }
 }
