@@ -23,4 +23,9 @@ public class Demo {
         return "test1";
     }
 
+    @GetMapping("test4")
+    public String test4() {
+        return "test4";
+    }
+
 }
