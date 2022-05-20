@@ -35,7 +35,7 @@ public class Demo {
 
     @GetMapping("test4")
     public String test4() {
-        // TODO: 2022/5/20
+        System.out.println("test4");
         return "test4";
     }
 }
