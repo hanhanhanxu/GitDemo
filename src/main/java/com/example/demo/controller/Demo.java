@@ -28,9 +28,9 @@ public class Demo {
         return "test4";
     }
 
-    @GetMapping("test5")
-    public String test5() {
-        return "test5";
+    @GetMapping("testxx")
+    public String testxx() {
+        return "testx";
     }
 
 }
