@@ -8,6 +8,7 @@ package com.example.demo.controller;
 public class Demo2 {
 
     public String testww() {
+        System.out.println("iuiuiu");
         return "testww";
     }
 }
