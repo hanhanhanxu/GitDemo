@@ -44,4 +44,10 @@ public class Demo {
         return "testee";
     }
 
+    @GetMapping("testbb")
+    public String testbb() {
+        //这是bb写的代码
+        return "testbb";
+    }
+
 }
