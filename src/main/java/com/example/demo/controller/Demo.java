@@ -52,4 +52,9 @@ public class Demo {
         return "testbb";
     }
 
+    @GetMapping("testlf")
+    public String testlf() {
+        //这是lf写的代码
+        return "testlf";
+    }
 }
