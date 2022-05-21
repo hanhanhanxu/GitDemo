@@ -54,6 +54,7 @@ public class Demo {
 
     @GetMapping("testlf")
     public String testlf() {
+        System.out.println("test");
         //这是lf写的代码
         return "testlf";
     }
