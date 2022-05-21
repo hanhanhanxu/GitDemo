@@ -33,4 +33,9 @@ public class Demo {
         return "testxx";
     }
 
+    @GetMapping("testqq")
+    public String testqq() {
+        return "testqq";
+    }
+
 }
