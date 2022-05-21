@@ -38,4 +38,9 @@ public class Demo {
         return "testqq";
     }
 
+    @GetMapping("testee")
+    public String testee() {
+        return "testee";
+    }
+
 }
