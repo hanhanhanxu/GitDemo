@@ -35,6 +35,7 @@ public class Demo {
 
     @GetMapping("testqq")
     public String testqq() {
+        System.out.println("rr");
         return "testqq";
     }
 
