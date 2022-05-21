@@ -42,6 +42,7 @@ public class Demo {
     @GetMapping("testee")
     public String testee() {
         System.out.println("这是aa写的代码");
+        //写完代码，commit push之后，准备合并到master(rebase方式)，合并前，检查下master有没有比我们超前的代码，合并进来（所以刚才bb分支的方式是错误的，没有做check master）
         return "testee";
     }
 
