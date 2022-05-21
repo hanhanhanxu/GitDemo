@@ -48,3 +48,37 @@ aabranch编写代码，提交并push，然后他想合并到master，就必须�
 然后再在远程提交PR进行rebase master的操作。最后aa的开发工作也完成了。
 
 最后我们切回master拉取最新代码，把其他分支都删除掉，发现master上的提交记录就是一条直线，并且没有多余的merge branch的那些提交记录。
+
+
+
+
+用git命令:
+git branch
+* master
+
+git checkout -b iu
+git checkout master
+git checkout -b lf
+
+git add.
+git commit -m "lf"
+git push origin lf
+git checkout master
+git pull --rebase (Already up to datte.发现没有可更新的，那就直接远程rebase and merge)
+(远程rebase and merge成功，删除远程和本地的lf分支)
+
+git checkout iu
+git add .
+git commit -m "iu's code"
+git push origin iu
+git checkout master
+git pull --rebase(发现有更新)
+
+git checkout iu
+git rebase master(Successfully rebased and updated refs/heads/iu.)
+git push origin iu -f(一定要强制推送，不然推不上去)
+(推上去后在远程提交PR，rebase and merge方式合并，合并成功)
+
+git checkout master
+git branch -D iu
+git log --graph --pretty=oneline --abbrev-commit
